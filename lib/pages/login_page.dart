@@ -1,7 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 
+import 'forgotpassword_page.dart';
+
 class LoginPage extends StatefulWidget {
+  final VoidCallback showRegisterPage;
+  const LoginPage({Key? key, required this.showRegisterPage}) : super(key: key);
+
   @override
   State<LoginPage> createState() => _LoginPageState();
 }
@@ -75,7 +80,7 @@ class _LoginPageState extends State<LoginPage> {
                         obscureText: false,
                         decoration: InputDecoration(
                             border: InputBorder.none,
-                            hintText: 'Usuario / Correo',
+                            hintText: 'Correo',
                             icon: const Icon(Icons.account_circle_outlined)),
                       ),
                     ),
@@ -103,6 +108,36 @@ class _LoginPageState extends State<LoginPage> {
                             icon: const Icon(Icons.key)),
                       ),
                     ),
+                  ),
+                ),
+                SizedBox(
+                  height: 10,
+                ),
+                Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 25.0),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.end,
+                    children: [
+                      GestureDetector(
+                        onTap: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) {
+                                return ForgotPasswordPage();
+                              },
+                            ),
+                          );
+                        },
+                        child: Text(
+                          '¿Olvidaste tu contraseña?',
+                          style: TextStyle(
+                            color: Colors.blue,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                      )
+                    ],
                   ),
                 ),
                 SizedBox(height: 20),
@@ -140,6 +175,7 @@ class _LoginPageState extends State<LoginPage> {
                       ),
                     ),
                     GestureDetector(
+                      onTap: widget.showRegisterPage,
                       child: Text(
                         'Unete ahora!',
                         style: TextStyle(

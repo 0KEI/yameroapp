@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:yameroapp/pages/login_page.dart';
+import 'package:yameroapp/auth/auth_page.dart';
 import '../pages/home_page.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 
@@ -15,7 +15,7 @@ class MainPage extends StatelessWidget {
           if (snapshot.hasData) {
             return HomePage();
           } else {
-            return LoginPage();
+            return AuthPage();
           }
         },
       ),
