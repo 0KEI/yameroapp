@@ -58,7 +58,7 @@ class _RegisterPageState extends State<RegisterPage> {
                 SizedBox(height: 10),
                 //Hola de Nuevo!
                 Text(
-                  "Hey, entonces eres nuevo,no?",
+                  "Hey, ¿entonces eres nuevo?",
                   style: TextStyle(
                     fontWeight: FontWeight.bold,
                     fontSize: 24,
@@ -66,7 +66,7 @@ class _RegisterPageState extends State<RegisterPage> {
                 ),
                 SizedBox(height: 10),
                 Text(
-                  "Entonces registrate a Yamero!",
+                  "¡Registrate en YaMero!",
                   style: TextStyle(
                     fontWeight: FontWeight.bold,
                     fontSize: 20,
@@ -183,7 +183,7 @@ class _RegisterPageState extends State<RegisterPage> {
                     GestureDetector(
                       onTap: widget.showLoginPage,
                       child: Text(
-                        'Inicia Sesion!',
+                        '¡Inicia Sesion!',
                         style: TextStyle(
                           color: Colors.blue,
                           fontWeight: FontWeight.bold,

@@ -55,7 +55,7 @@ class _LoginPageState extends State<LoginPage> {
                 ),
                 SizedBox(height: 10),
                 Text(
-                  "Bienvenido a YaMero!",
+                  "¡Bienvenido a YaMero!",
                   style: TextStyle(
                     fontWeight: FontWeight.bold,
                     fontSize: 20,
@@ -177,7 +177,7 @@ class _LoginPageState extends State<LoginPage> {
                     GestureDetector(
                       onTap: widget.showRegisterPage,
                       child: Text(
-                        'Unete ahora!',
+                        '¡Únete ahora!',
                         style: TextStyle(
                           color: Colors.blue,
                           fontWeight: FontWeight.bold,
