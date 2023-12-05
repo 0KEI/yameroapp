@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
-
 import 'forgotpassword_page.dart';
 
 class LoginPage extends StatefulWidget {
@@ -153,7 +152,7 @@ class _LoginPageState extends State<LoginPage> {
                           borderRadius: BorderRadius.circular(15)),
                       child: Center(
                         child: Text(
-                          'Iniciar Sesion',
+                          'Iniciar sesión',
                           style: TextStyle(
                               color: Colors.white,
                               fontSize: 18,

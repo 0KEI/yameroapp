@@ -91,7 +91,7 @@ class _RegisterPageState extends State<RegisterPage> {
                         obscureText: false,
                         decoration: InputDecoration(
                             border: InputBorder.none,
-                            hintText: 'Usuario / Correo',
+                            hintText: 'Correo electrónico',
                             icon: const Icon(Icons.account_circle_outlined)),
                       ),
                     ),
@@ -139,7 +139,7 @@ class _RegisterPageState extends State<RegisterPage> {
                         obscureText: true,
                         decoration: InputDecoration(
                             border: InputBorder.none,
-                            hintText: 'Confirmar Contraseña',
+                            hintText: 'Confirmar contraseña',
                             icon: const Icon(Icons.key)),
                       ),
                     ),
@@ -183,7 +183,7 @@ class _RegisterPageState extends State<RegisterPage> {
                     GestureDetector(
                       onTap: widget.showLoginPage,
                       child: Text(
-                        '¡Inicia Sesion!',
+                        '¡Inicia sesión!',
                         style: TextStyle(
                           color: Colors.blue,
                           fontWeight: FontWeight.bold,
